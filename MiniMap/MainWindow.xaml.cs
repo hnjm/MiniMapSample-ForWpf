@@ -11,8 +11,6 @@ namespace MiniMap
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ShapeFileFeatureLayer shapeFileLayer;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -22,9 +20,6 @@ namespace MiniMap
         {
             map.MapUnit = GeographyUnit.DecimalDegree;
 
-            WorldStreetsAndImageryOverlay worldOverlay = new WorldStreetsAndImageryOverlay();
-            map.Overlays.Add(worldOverlay);
-
             LayerOverlay layerOverlay = new LayerOverlay();
             WorldStreetsAndImageryRasterLayer worldLayer = new WorldStreetsAndImageryRasterLayer();
             layerOverlay.Layers.Add(worldLayer);
@@ -33,7 +28,7 @@ namespace MiniMap
             shapeFileLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
             layerOverlay.Layers.Add(shapeFileLayer);
             map.Overlays.Add(layerOverlay);
-
+            
             AdornmentOverlay adornmentOverlay = new AdornmentOverlay();
             MiniMapAdornmentLayer miniMapAndornmentLayer = new MiniMapAdornmentLayer(200, 160);
             miniMapAndornmentLayer.Location = AdornmentLocation.UpperRight;
