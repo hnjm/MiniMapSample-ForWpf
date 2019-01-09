@@ -68,6 +68,9 @@
     <Reference Include="ThinkGeo.MapSuite, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
       <HintPath>..\packages\ThinkGeo.MapSuite.10.4.0\lib\net45\ThinkGeo.MapSuite.dll</HintPath>
     </Reference>
+    <Reference Include="ThinkGeo.MapSuite.Layers.Background, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
+      <HintPath>..\packages\ThinkGeo.MapSuite.Layers.Background.10.4.0\lib\net45\ThinkGeo.MapSuite.Layers.Background.dll</HintPath>
+    </Reference>
     <Reference Include="ThinkGeo.MapSuite.Layers.ShapeFile, Version=10.0.0.0, Culture=neutral, PublicKeyToken=0828af5241fb4207, processorArchitecture=MSIL">
       <HintPath>..\packages\ThinkGeo.MapSuite.Layers.ShapeFile.10.4.0\lib\net45\ThinkGeo.MapSuite.Layers.ShapeFile.dll</HintPath>
     </Reference>
